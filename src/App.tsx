@@ -9,8 +9,10 @@ import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
 import Dashboard from "./pages/Dashboard";
 import Home from "./pages/Home";
+import NewsSubmitter from "./pages/NewsSubmitter";
 import NotFound from "./pages/NotFound";
 import Transparency from "./pages/Transparency";
+import Validator from "./pages/Validator";
 import Verify from "./pages/Verify";
 
 const queryClient = new QueryClient();
@@ -46,6 +48,22 @@ const App = () => (
                   element={
                     <ProtectedRoute>
                       <Verify />
+                    </ProtectedRoute>
+                  }
+                  />
+                <Route
+                  path="/validator"
+                  element={
+                    <ProtectedRoute>
+                      <Validator />
+                    </ProtectedRoute>
+                  }
+                />
+                <Route
+                  path="/submit-news"
+                  element={
+                    <ProtectedRoute>
+                      <NewsSubmitter />
                     </ProtectedRoute>
                   }
                 />
