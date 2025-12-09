@@ -22,6 +22,8 @@ const Header = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Verify News", path: "/verify" },
+    { name: "Validator", path: "/validator" },
+    { name: "Submit News", path: "/submit-news" },
     { name: "Transparency", path: "/transparency" },
     ...(isAuthenticated ? [{ name: "Dashboard", path: "/dashboard" }] : []),
   ];
